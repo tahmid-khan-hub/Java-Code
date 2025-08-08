@@ -10,10 +10,39 @@ public class Account {
         this.balance = balance;
     }
 
-    @Override
-    public String toString() {
-        return "Account Number: " + accountNumber +
-               "\nAccount Holder: " + accountHolder +
-               "\nBalance: $" + balance;
+    // getter and setter for accountNumber
+    public String getAccountNumber() {
+        return accountNumber;
     }
+    public void setAccountNumber(String accountNumber){
+        this.accountNumber = accountNumber;
+    }
+
+    // getter and setter for accountHolder
+    public String getAccountHolder() {
+        return accountHolder;
+    }
+    public void setAccountHolder(String accountHolder){
+        this.accountHolder = accountHolder;
+    }
+
+    // getter and setter for balance
+    public double getBalance(){
+        return balance;
+    }
+    public void setBalance(double balance){
+        this.balance = balance;
+    }
+
+    // Method to print account holder name and account number
+    public void accountInfo() {
+        System.out.println("Account Holder: " + accountHolder);
+        System.out.println("Account Number: " + accountNumber);
+    }
+
+    // Method to print current balance
+    public void currentBalance() {
+        System.out.println("Current Balance: $" + balance);
+    }
+    
 }
