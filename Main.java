@@ -13,5 +13,7 @@ public class Main {
         sa.currentBalance();
 
         System.out.println("Interest Rate: " + sa.getInterestRate() + "%");
+
+        sa.currentBalance();
     }
 }

@@ -13,4 +13,10 @@ public class SavingAccount extends Account {
     public void setInterestRate(double InterestRate){
         this.InterestRate = InterestRate;
     } 
+
+    // overriding current balance method here
+    @Override
+    public void currentBalance(){
+        System.out.println("Current Balance in the Savings Account is: " + getBalance());
+    }
 }
