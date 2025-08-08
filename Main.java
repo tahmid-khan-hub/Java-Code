@@ -6,5 +6,12 @@ public class Main {
         myAccount.currentBalance();
 
         myAccount.currentBalance("09-08-2025");
+
+        SavingAccount sa = new SavingAccount(4.5, "cdsv543r", "Tahmid", 3333.00);
+
+        sa.accountInfo();
+        sa.currentBalance();
+
+        System.out.println("Interest Rate: " + sa.getInterestRate() + "%");
     }
 }
