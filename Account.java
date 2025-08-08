@@ -44,5 +44,9 @@ public class Account {
     public void currentBalance() {
         System.out.println("Current Balance: $" + balance);
     }
-    
+
+    // current balance with date
+    public void currentBalance(String Date){
+        System.out.println("Current Balance is: " + balance + " on " + Date);
+    }
 }

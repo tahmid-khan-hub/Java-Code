@@ -4,5 +4,7 @@ public class Main {
 
         myAccount.accountInfo();
         myAccount.currentBalance();
+
+        myAccount.currentBalance("09-08-2025");
     }
 }
