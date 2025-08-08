@@ -1,4 +1,4 @@
-public class Account {
+public class Account implements Transaction {
     private String accountNumber;
     private String accountHolder;
     private double balance;
@@ -48,5 +48,22 @@ public class Account {
     // current balance with date
     public void currentBalance(String Date){
         System.out.println("Current Balance is: " + balance + " on " + Date);
-    }    
+    }   
+    
+    // logic of send and receive money
+    @Override
+    public void sendMoney(int money){
+        if (balance >= money) {
+            balance -= money;
+            System.out.println("Sent $" + money + ". New balance: $" + balance);
+        } else {
+            System.out.println("Insufficient balance to send $" + money);
+        }
+    }
+
+    @Override
+    public void receiveMoney(int money) {
+        balance += money;
+        System.out.println("Received $" + money + ". New balance: $" + balance);
+    }
 }

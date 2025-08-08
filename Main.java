@@ -15,5 +15,8 @@ public class Main {
         System.out.println("Interest Rate: " + sa.getInterestRate() + "%");
 
         sa.currentBalance();
+
+        myAccount.sendMoney(100);
+        myAccount.receiveMoney(500);
     }
 }
